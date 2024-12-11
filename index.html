@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tool</h1>
+        </header>
+        <main>
+            <section id="calculator" class="tool">
+                <h2>電卓</h2>
+                <input type="text" id="calc-display" readonly>
+                <div class="buttons">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>/</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>*</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>-</button>
+                    <button>0</button>
+                    <button>.</button>
+                    <button>=</button>
+                    <button>+</button>
+                </div>
+            </section>
+            <section id="notepad" class="tool">
+                <h2>メモ帳</h2>
+                <textarea id="memo"></textarea>
+            </section>
+            <section id="timer" class="tool">
+                <h2>タイマー</h2>
+                <div id="timer-display">00:00:00</div>
+                <button id="start-timer">開始</button>
+                <button id="stop-timer">停止</button>
+                <button id="reset-timer">リセット</button>
+            </section>
+            <section id="currency-converter" class="tool">
+                <h2>為替計算</h2>
+                <input type="number" id="amount" placeholder="金額">
+                <select id="currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY" selected>JPY</option>
+                </select>
+                <button id="convert">変換</button>
+                <div id="conversion-result">結果: 0</div>
+            </section>
+            <section id="weather" class="tool">
+                <h2>天気情報</h2>
+                <input type="text" id="location" placeholder="都市名を入力">
+                <button id="get-weather">検索</button>
+                <div id="weather-result">天気情報がここに表示されます。</div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
